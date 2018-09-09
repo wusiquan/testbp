@@ -1,8 +1,8 @@
 {
-  "name": "testbigpipe",
+  "name": "testbp",
   "version": "0.0.1",
-  "description": "test bigpipe",
-  "main": "index.js",
+  "description": "test bp",
+  "private": true,
   "scripts": {
     "start": "nodemon index.js"
   },

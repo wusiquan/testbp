@@ -19,8 +19,12 @@ let env = nunjucks.configure('views', {
 })
 njkExtension(env)
 
-// 设置模板
+
+app.set('port', process.env.PORT || 3000)
 app.set('views', path.join(__dirname, 'views'))
+// cache lookup of the view
+// app.enable('view cache')
+
 app.use(logger('dev'))
 
 app.use('/hello', (req, res) => {
@@ -31,6 +35,6 @@ app.use('/', (req, res) => {
   res.render('index.html')
 })
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log('server is running on port 3000')
+app.listen(app.get('port'), () => {
+  console.log('server is running on port ' + app.get('port'))
 })
