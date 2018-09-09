@@ -1,0 +1,20 @@
+{
+  "verbose": true,
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "node_modules"
+  ],
+  "execMap": {
+    "js": "DEBUG=bigpipe node"
+  },
+  "watch": [
+    "index.js",
+    "./utils/*.js",
+    "./lib/*.js"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js"
+}
