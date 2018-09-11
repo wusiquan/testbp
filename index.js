@@ -6,7 +6,7 @@ const favicon = require('serve-favicon')
 const nunjucks = require('nunjucks')
 const logger = require('morgan')
 
-const njkExtension = require('./utils/njkExtension')
+const njkExtension = require('./lib/njkExtension')
 
 const app = express()
 app.use(favicon(path.join(__dirname, 'public', 'favicon.png')))

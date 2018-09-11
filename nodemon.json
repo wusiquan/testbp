@@ -10,7 +10,6 @@
   },
   "watch": [
     "index.js",
-    "./utils/*.js",
     "./lib/*.js"
   ],
   "env": {
